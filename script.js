@@ -19,6 +19,7 @@ document.addEventListener('scroll', function() {
     mount2.style.marginBottom = -value * 1.2 + 'px'
 })
 
+// function navbar
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     let lastScrollTop = 0;
@@ -38,4 +39,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
+});
+
+// function title
+window.addEventListener('DOMContentLoaded', function () {
+    const titleElement = document.querySelector('.home .title');
+
+    setTimeout(() => {
+        titleElement.classList.add('black');
+    }, 0);
+
+    setTimeout(() => {
+        titleElement.classList.remove('black');
+    }, 1300);
 });
