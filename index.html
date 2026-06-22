@@ -1,376 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Dany Arya Maulana</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- cdn bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- cdn animated css -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- Google Font (Kustomisasi Font) -->
+    <meta name="description"
+        content="Portofolio Dany Arya Maulana sebagai Frontend Engineer, Frontend Developer, dan AI Engineer.">
+    <title>Dany Arya Maulana | Frontend & AI Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm bg-white navbar-visible">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <b>@danyaryam</b>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <a class="brand" href="#top" aria-label="Dany Arya Maulana">Dany Arya</a>
+            <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ps-3">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item ps-3">
-                        <a class="nav-link" href="#pendidikan">Riwayat Pendidikan</a>
-                    </li>
-                    <li class="nav-item ps-3">
-                        <a class="nav-link" href="#keahlian">Keahlian</a>
-                    </li>
-                    <li class="nav-item ps-3">
-                        <a class="nav-link" href="#kontak">Hubungi Saya</a>
-                    </li>
-                </ul>
-    
-                <div class="d-flex">
-                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKontak">
-                        <b>Hubungi Saya</b>
-                    </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section-shell">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Frontend Engineer / AI Engineer</p>
+                <h1>Dany Arya Maulana</h1>
+                <p class="hero-lead">
+                    Saya membangun web interface modern, aplikasi full-stack, dan prototype AI/ML dengan stack
+                    JavaScript, TypeScript, PHP, Python, serta database SQL dan NoSQL.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Lihat Project</a>
+                    <a class="button button-secondary" href="mailto:danyarya10k@gmail.com">Email Saya</a>
                 </div>
             </div>
-        </div>
-    </nav>
 
-    <section class="home">
-        <img src="assets/mount2.png" class="mount2 animate__animated animate__backInLeft animate__delay-1s">
-        <img src="assets/mount1.png" class="mount1 animate__animated animate__backInRight animate__delay-1s">
-        <img src="assets/bush2.png" class="bush2 animate__animated animate__backInLeft animate__delay-2s">
+            <div class="hero-visual reveal">
+                <div class="portrait-frame">
+                    <img src="assets/images/dany.jpeg" alt="Foto Dany Arya Maulana">
+                </div>
+                <div class="signature-card">
+                    <span>Available for</span>
+                    <strong>Frontend, Full-stack & AI</strong>
+                </div>
+            </div>
+        </section>
 
-        <h1 class="title animate__animated animate__flash">Welcome To My Project CV</h1>
+        <section class="metrics section-shell" aria-label="Ringkasan profil">
+            <div class="metric reveal">
+                <span>25+</span>
+                <p>Focus Area</p>
+            </div>
+            <div class="metric reveal">
+                <span>01</span>
+                <p>Production Project</p>
+            </div>
+            <div class="metric reveal">
+                <span>2023</span>
+                <p>Software Engineering Student</p>
+            </div>
+        </section>
 
-        <img src="assets/bush1.png" class="bush1 animate__animated animate__backInRight animate__delay-2s">
-        <img src="assets/leaf2.png" class="leaf2 animate__animated animate__bounceInDown animate__delay-3s">
-        <img src="assets/leaf1.png" class="leaf1 animate__animated animate__bounceInDown animate__delay-3s">
-    </section>
+        <section class="section-shell split-section" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Profile</p>
+                <h2>Frontend yang detail, AI yang aplikatif.</h2>
+            </div>
+            <div class="about-content reveal">
+                <p>
+                    Saya adalah mahasiswa Teknik Rekayasa Perangkat Lunak di Politeknik Negeri Banyuwangi yang berfokus
+                    pada pengembangan frontend, full-stack web development, dan penerapan AI/ML. Saya senang mengubah
+                    ide menjadi produk digital yang rapi di sisi tampilan, kuat di sisi data, dan relevan dengan
+                    kebutuhan pengguna.
+                </p>
+                <div class="role-grid">
+                    <article>
+                        <h3>Frontend Engineer</h3>
+                        <p>Menyusun UI dengan React.js, Next.js, Vue, TypeScript, Tailwind, Bootstrap, dan CSS yang responsif.</p>
+                    </article>
+                    <article>
+                        <h3>Full-stack Developer</h3>
+                        <p>Membangun aplikasi web dengan Laravel, PHP, Node.js, Prisma, MySQL, PostgreSQL, dan MongoDB.</p>
+                    </article>
+                    <article>
+                        <h3>AI Engineer</h3>
+                        <p>Mengembangkan eksperimen machine learning dengan Python, TensorFlow, dan scikit-learn.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section class="about">
-        <section class="mt-5 pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 mb-5 mb-md-0">
-                        <img src="assets/images/dany.jpeg " alt="dany" class="img-fluid rounded-4 shadow-lg">
+        <section class="section-shell" id="projects">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Project yang pernah saya kembangkan.</h2>
+            </div>
+
+            <div class="project-list">
+                <article class="project-card reveal">
+                    <div>
+                        <span class="project-index">01</span>
+                        <h3>Dr. Aquatic</h3>
+                        <p>
+                            Platform ecommerce aquatic yang dikembangkan saat magang. Saya bertanggung jawab pada
+                            front-end, back-end, database, perbaikan bug, integrasi API, dan deployment ke production.
+                        </p>
                     </div>
-                    <div class="col-md-9 mt-md-5">
-                        <div class="ms-md-4 pt-md-5">
-                            <div class=" text-md-start text-center">
-                                <h1><b>Dany</b> Arya Maulana</h1>
-                                <h5 class="text-light">
-                                    <b>Student Software</b> at
-                                    <a href="https://poliwangi.ac.id/" class="text-decoration-none text-light"
-                                        target="_blank">Politeknik Negeri Banyuwangi</a>
-                                </h5>
-                            </div>
-                        </div>
+                    <div class="project-meta">
+                        <span>Role: Full Stack Developer</span>
+                        <span>PHP, Laravel, SQL</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div>
+                        <span class="project-index">02</span>
+                        <h3>Ecommerce Feature System</h3>
+                        <p>
+                            Implementasi fitur keranjang, login dan register, katalog produk, search produk, review
+                            produk, jasa kirim, pembayaran online, dan notifikasi pembayaran via email.
+                        </p>
+                    </div>
+                    <div class="project-meta">
+                        <span>Role: Backend & Frontend</span>
+                        <span>RajaOngkir, Payment Gateway</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div>
+                        <span class="project-index">03</span>
+                        <h3>AI / Machine Learning Prototype</h3>
+                        <p>
+                            Eksplorasi machine learning dan deep learning untuk pemrosesan data, training model,
+                            evaluasi performa, serta penerapan insight AI dalam solusi aplikasi.
+                        </p>
+                    </div>
+                    <div class="project-meta">
+                        <span>Role: AI Engineer</span>
+                        <span>Python, TensorFlow, scikit-learn</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div>
+                        <span class="project-index">04</span>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            Website portofolio personal untuk menampilkan profil, skill, pengalaman, project,
+                            sertifikasi, dan kontak dalam pengalaman satu halaman yang ringan dan responsif.
+                        </p>
+                    </div>
+                    <div class="project-meta">
+                        <span>Role: Frontend Engineer</span>
+                        <span>HTML, CSS, JavaScript</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell split-section" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Capabilities</p>
+                <h2>Tooling dan kemampuan utama.</h2>
+            </div>
+            <div class="skill-panel reveal">
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <div class="chips">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>React.js</span>
+                        <span>Next.js</span>
+                        <span>Vue</span>
+                        <span>Tailwind CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Responsive Design</span>
+                        <span>Client Side</span>
+                        <span>Front-end Coding</span>
+                        <span>Web Application Development</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend & Database</h3>
+                    <div class="chips">
+                        <span>Full-Stack Development</span>
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>Node.js</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>AI, Data & Product</h3>
+                    <div class="chips">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>Natural Language Processing</span>
+                        <span>scikit-learn</span>
+                        <span>Machine Learning</span>
+                        <span>Deep Learning</span>
+                        <span>Neural Networks</span>
+                        <span>Long Short-term Memory</span>
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>Product Thinking</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pendidikan" class="pt-5">
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <h3 class="mb-3">Riwayat Pendidikan</h3>
-
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <span class="badge bg-primary">2023 - sekarang</span>
-                                        <h5 class="mt-2 mb-0">Politeknik Negeri Banyuwangi</h5>
-                                        <p class="text-body-tertiary mb-0">Teknik Rekayasa Perangkat Lunak</p>
-                                        <div class="mt-2">
-                                            <p class="mb-1">Mata Kuliah yang saya ikuti : </p>
-                                            <span class="badge text-bg-light">Basis Data</span>
-                                            <span class="badge text-bg-light">Pemrograman Mobile</span>
-                                            <span class="badge text-bg-light">Pemrograman Website</span>
-                                            <span class="badge text-bg-light">Object Oriented Programing </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <span class="badge bg-primary">2020 - 2023</span>
-                                        <h5 class="mt-2 mb-0">SMAN 1 GIRI</h5>
-                                        <p class="text-body-tertiary mb-0">IPS</p>
-                                        <div class="mt-2">
-                                            <p class="mb-1">Mata Kuliah yang saya ikuti : </p>
-                                            <span class="badge text-bg-light">Matematika Wajib</span>
-                                            <span class="badge text-bg-light">Sosiologi</span>
-                                            <span class="badge text-bg-light">Bahasa Inggris</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 mt-5 mt-md-0">
-                        <div class="row">
-                            <h3 class="mb-3">Pengalaman</h3>
-                            <!-- Contoh: Pengalaman Kerja, Pengalaman Sukarelawan, Magang, Organisasi, dll. -->
-
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <span class="badge bg-secondary">2020 - 2021</span>
-                                        <h5 class="mt-2 mb-0"><b>OSIS</b></h5>
-                                        <p class="text-body-tertiary mb-0">Koordinator Departemen Sosial Politik</p>
-                                        <hr class="mt-2 mb-3 text-body-tertiary">
-                                        <div class="mt-2">
-                                            <ul class="mb-0">
-                                                <li>ketua panitia Sumpah pemuda 2020</li>
-                                                <li>Ketua panitia Smagi Basketball Competition</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <span class="badge bg-secondary">2020 - 2023</span>
-                                        <h5 class="mt-2 mb-0"><b>Batalyon Smagi</b></h5>
-                                        <p class="text-body-tertiary mb-0">Staf 1 Batalyon</p>
-                                        <hr class="mt-2 mb-3 text-body-tertiary">
-                                        <div class="mt-2">
-                                            <ul class="mb-0">
-                                                <li>ketua panitia Pemilihan Danyon 1</li>
-                                                <li>Ketua panitia tes kesemaptaan angkatan 2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+        <section class="section-shell certificate-section" id="certificates">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Credentials</p>
+                <h2>Sertifikat dan pembelajaran.</h2>
+            </div>
+            <div class="certificate-grid">
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Jun 2026 - Jun 2029</span>
+                    <h3>Membangun Proyek Deep Learning Tingkat Mahir</h3>
+                    <strong>Credential ID MEPJOG6ZLZ3V</strong>
+                    <p>
+                        Sertifikasi lanjutan untuk deep learning, Natural Language Processing, neural networks, dan
+                        pengembangan proyek AI tingkat mahir.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | May 2026 - May 2029</span>
+                    <h3>Belajar Fundamental Deep Learning</h3>
+                    <strong>Credential ID 98XW085O4XM3</strong>
+                    <p>
+                        Mempelajari konsep fundamental deep learning, neural networks, training model, dan evaluasi
+                        performa model.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Mar 2026 - Mar 2029</span>
+                    <h3>Belajar Machine Learning untuk Pemula</h3>
+                    <strong>Credential ID MEPJOM9Q4Z3V</strong>
+                    <p>
+                        Dasar machine learning, pemrosesan data, pemilihan algoritma, dan evaluasi hasil prediksi
+                        menggunakan workflow yang terstruktur.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Feb 2026 - Feb 2029</span>
+                    <h3>Memulai Pemrograman dengan Python</h3>
+                    <strong>Credential ID N9ZONOY9DXG5</strong>
+                    <p>
+                        Dasar pemrograman Python, object-oriented programming, struktur data, dan fondasi logika untuk
+                        pengembangan software maupun AI.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Feb 2026 - Feb 2029</span>
+                    <h3>Belajar Dasar AI</h3>
+                    <strong>Credential ID 53XE1MQQRZRN</strong>
+                    <p>
+                        Pengenalan artificial intelligence, konsep machine learning, dan penerapan AI untuk membantu
+                        pengambilan keputusan berbasis data.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Feb 2026 - Feb 2029</span>
+                    <h3>Belajar Dasar Git dengan GitHub</h3>
+                    <strong>Credential ID 98XW08554XM3</strong>
+                    <p>
+                        Mempelajari version control, workflow Git, kolaborasi GitHub, serta praktik project management
+                        untuk pengembangan software.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Feb 2026 - Feb 2029</span>
+                    <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+                    <strong>Credential ID 2VX30WKEJXYQ</strong>
+                    <p>
+                        Fondasi untuk menjadi pengembang software, termasuk pola pikir pemrograman, kebutuhan produk,
+                        dan dasar pengembangan aplikasi.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>freeCodeCamp | Jan 2024 - Sekarang</span>
+                    <h3>Responsive Web Design</h3>
+                    <p>
+                        Membangun halaman web responsif dengan HTML dan CSS, termasuk layout, typography, accessibility,
+                        dan styling modern.
+                    </p>
+                </article>
+                <article class="certificate-card reveal">
+                    <span>Dicoding | Feb 2026 - Feb 2029</span>
+                    <h3>Pengenalan ke Logika Pemrograman</h3>
+                    <strong>Credential ID 53XE1LD9KZRN</strong>
+                    <p>
+                        Pengenalan programming logic, alur berpikir algoritmik, dan penyelesaian masalah dasar dalam
+                        pengembangan software.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <!-- KEAHLIAN DAN KURSUS -->
-        <section class="my-5 py-5 bg-transparant" id="keahlian">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="mb-3">Keahlian</h3>
-                        <!-- Keahlian atau skill yang kamu bisa atau kuasai -->
-
-                        <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
-                            Web Development (HTML, CSS, JAVASCRIPT)
-                        </a>
-                        <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
-                            Design UI di Figma
-                        </a>
-                        <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
-                            Microsoft Office (Word, Excel, Powerpoint)
-                        </a>
-                        <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
-                            Basket
-                        </a>
-                        <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
-                            Drum
-                        </a>
-                    </div>
-                    <div class="col-md-6 mt-5 mt-md-0">
-                        <div class="row">
-                            <h3 class="mb-3">Kursus | Webinar | Seminar</h3>
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <h6 class="mt-0 mb-0">Belajar menggunakan Bootstrap</h6>
-                                        <p class="text-body-tertiary mb-0">Bootstrap</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <h6 class="mt-0 mb-0">Belajar Dasar Pemrograman</h6>
-                                        <p class="text-body-tertiary mb-0">Dicoding Indonesia</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <div class="card shadow-sm border-0 rounded-4">
-                                    <div class="card-body">
-                                        <h6 class="mt-0 mb-0">Belajar Flutter</h6>
-                                        <p class="text-body-tertiary mb-0">Yt : Erico Darmawan Handoyo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 mt-5 mt-md-3">
-                        <h3 class="mb-3">Ketertarikan</h3>
-                        <!-- Ketertarikan terkait industri yang kamu tuju seperti profesi, bidang, atau yang lain -->
-
-                        <a class="btn btn-success text-bg-light text-start mb-2 me-1">
-                            Software Development
-                        </a>
-                        <a class="btn btn-success text-bg-light text-start mb-2 me-1">
-                            Product Management
-                        </a>
-                        <a class="btn btn-success text-bg-light text-start mb-2 me-1">
-                            Mobile Development
-                        </a>
-                        <a class="btn btn-success text-bg-light text-start mb-2 me-1">
-                            Web Frontend
-                        </a>
-                        <a class="btn btn-success text-bg-light text-start mb-2 me-1">
-                            Leadership
-                        </a>
-                    </div>
-                </div>
+        <section class="section-shell timeline-section" id="experience">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Education & Experience</p>
+                <h2>Perjalanan singkat.</h2>
             </div>
-        </section>
-        <!-- END OF KEAHLIAN DAN KURSUS -->
-
-        <section id="kontak">
-            <div class="container py-md-5">
-                <div class="row">
-                    <div class="col-md-7 pt-5 text-md-start text-center">
-                        <h1><b>Tertarik dengan Saya?</b></h1>
-                        <p>Hubungi saya jika ada hal yang perlu didiskusikan lebih lanjut</p>
-
-                        <div class="mb-3">
-                            <a class="btn btn-primary me-1" data-bs-toggle="modal" data-bs-target="#modalKontak">
-                                <b>Hubungi Saya</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-5 text-start">
-                        <!-- Ilustrasi lainnya, cek di https://storyset.com/ (Gratis!) -->
-                        <img src="assets/images/Virtual reality-amico.svg" alt="Ilustrasi" class="img-fluid">
-                    </div>
-                </div>
+            <div class="timeline reveal">
+                <article>
+                    <span>Feb 2025 - Nov 2025</span>
+                    <h3>Dr. Aquatic</h3>
+                    <p>Full Stack Developer untuk ecommerce aquatic, termasuk weekly presentation, daily stand up, API, database, payment, shipping, dan server production.</p>
+                </article>
+                <article>
+                    <span>2023 - Sekarang</span>
+                    <h3>Politeknik Negeri Banyuwangi</h3>
+                    <p>Teknologi Rekayasa Perangkat Lunak dengan fokus web development, database, software engineering, dan AI engineering.</p>
+                </article>
+                <article>
+                    <span>2020 - 2023</span>
+                    <h3>SMAN 1 GIRI</h3>
+                    <p>Aktif di OSIS, basket, dan band. Meraih juara 3 basket SMA putra pada HARJABA 2021 dan Banteng Cup 2023.</p>
+                </article>
+                <article>
+                    <span>Sep 2021 - Sep 2022</span>
+                    <h3>OSIS & Batalyon Smagi</h3>
+                    <p>Koordinator Departemen Sosial Politik, ketua panitia Sumpah Pemuda, dan ketua panitia Smagi Basketball Championship.</p>
+                </article>
             </div>
         </section>
 
-        <!-- FOOTER -->
-        <footer class="bg-dark py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p class="text-white mb-0">Copyright &copy; 2024 - <b>Dany Arya Maulana</b> </p>
-                    </div>
+        <section class="contact section-shell" id="contact">
+            <div class="contact-card reveal">
+                <p class="eyebrow">Let's Connect</p>
+                <h2>Tertarik berkolaborasi?</h2>
+                <p>
+                    Saya terbuka untuk diskusi project frontend, pengembangan web, UI implementation, dan ide produk
+                    berbasis AI/ML.
+                </p>
+                <div class="contact-actions">
+                    <a class="button button-primary" href="mailto:danyarya10k@gmail.com">danyarya10k@gmail.com</a>
+                    <a class="button button-secondary" href="https://www.linkedin.com/in/dany-arya-maulana/"
+                        target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a class="button button-secondary" href="https://www.instagram.com/danyarya.m/" target="_blank"
+                        rel="noreferrer">Instagram</a>
                 </div>
             </div>
-        </footer>
-        <!-- END OF FOOTER -->
-    </section>
+        </section>
+    </main>
 
-    <!-- NOTE!
-        LEBIH BAIK JIKA ADA : 
-        - Kamu bisa tambahkan Portofolio terkait project atau hal yang telah kamu buat -->
-
-    <!-- MODAL KONTAK -->
-    <div class="modal fade" id="modalKontak" tabindex="-1" aria-labelledby="modalKontakLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalKontakLabel">Hubungi Saya</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="card bg-light border-success-subtle mb-3 rounded-4">
-                        <div class="card-body">
-                            <h5 class="mb-0">No. HP / Whatsapp</h5>
-                            <p class="mb-0">
-                                <b>+62 838-4955-4822</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card bg-light border-primary-subtle mb-3 rounded-4">
-                        <div class="card-body">
-                            <h5 class="mb-0">Linkedin</h5>
-                            <p class="mb-0">
-                                <a href="https://www.linkedin.com/in/dany-arya-1b586430a/" target="_blank">
-                                    linkedin.com/in/<b>danyarya</b>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card bg-light border-dark mb-3 rounded-4">
-                        <div class="card-body">
-                            <h5 class="mb-0">Email</h5>
-                            <p class="mb-0">
-                                <b>danyarya10k@gmail.com</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card bg-light border-danger-subtle mb-3 rounded-4">
-                        <div class="card-body">
-                            <h5 class="mb-0">Instagram</h5>
-                            <p class="mb-0">
-                                <b><a href="https://www.instagram.com/danyarya.m/">@danyarya.m</a></b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <!-- Kode Javascript agar menu pada navbar otomatis tertutup jika di klik -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbarNav = document.getElementById('navbarSupportedContent');
-            var navLinks = navbarNav.querySelectorAll('.nav-link');
-            var bsCollapse = new bootstrap.Collapse(navbarNav, {
-                toggle: false
-            });
-
-            navLinks.forEach(function (link) {
-                link.addEventListener('click', function () {
-                    if (navbarNav.classList.contains('show')) {
-                        bsCollapse.hide();
-                    }
-                });
-            });
-        });
-    </script>
-
+    <footer class="footer">
+        <p>Copyright &copy; 2026 Dany Arya Maulana. Built with clarity, detail, and modern web craft.</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

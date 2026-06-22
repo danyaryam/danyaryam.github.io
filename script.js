@@ -1,55 +1,55 @@
-const title = document.querySelector('.title')
-const leaf1 = document.querySelector('.leaf1')
-const leaf2 = document.querySelector('.leaf2')
-const bush2 = document.querySelector('.bush2')
-const mount1 = document.querySelector('.mount1')
-const mount2 = document.querySelector('.mount2')
+const header = document.querySelector(".site-header");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+const revealItems = document.querySelectorAll(".reveal");
 
-document.addEventListener('scroll', function() {
-    let value = window.scrollY
-    // console.log(value)
-    title.style.marginTop = value * 1.1 + 'px'
+let lastScrollY = window.scrollY;
 
-    leaf1.style.marginLeft = -value + 'px'
-    leaf2.style.marginLeft = value + 'px'
+function updateHeader() {
+    const currentScrollY = window.scrollY;
+    header.classList.toggle("is-scrolled", currentScrollY > 24);
+    header.classList.toggle("is-hidden", currentScrollY > lastScrollY && currentScrollY > 120);
+    lastScrollY = Math.max(currentScrollY, 0);
+}
 
-    bush2.style.marginBottom = -value + 'px'
+function closeMenu() {
+    navToggle.classList.remove("is-open");
+    navLinks.classList.remove("is-open");
+    header.classList.remove("menu-active");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+}
 
-    mount1.style.marginBottom = -value * 1.1 + 'px'
-    mount2.style.marginBottom = -value * 1.2 + 'px'
-})
-
-// function navbar
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.querySelector('.navbar');
-    let lastScrollTop = 0;
-
-    window.addEventListener('scroll', function () {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-            // discroll kebawah
-            navbar.classList.add('navbar-hidden');
-            navbar.classList.remove('navbar-visible');
-        } else {
-            // discroll ke atas
-            navbar.classList.remove('navbar-hidden');
-            navbar.classList.add('navbar-visible');
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-    });
+navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.classList.toggle("is-open", isOpen);
+    header.classList.toggle("menu-active", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-open", isOpen);
 });
 
-// function title
-window.addEventListener('DOMContentLoaded', function () {
-    const titleElement = document.querySelector('.home .title');
-
-    setTimeout(() => {
-        titleElement.classList.add('black');
-    }, 0);
-
-    setTimeout(() => {
-        titleElement.classList.remove('black');
-    }, 1300);
+navLinks.addEventListener("click", (event) => {
+    if (event.target === navLinks) {
+        closeMenu();
+    }
 });
+
+navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+});
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.16 }
+);
+
+revealItems.forEach((item) => revealObserver.observe(item));
+window.addEventListener("scroll", updateHeader, { passive: true });
+updateHeader();
