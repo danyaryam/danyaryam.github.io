@@ -1,0 +1,5 @@
+buatkan issue.md dengan menggunakan Github CLI pada komputer ini yang berisi planning dibawah ini: 
+
+tambahkan gambar sertifikat pada card sertifikat dan pembelajaran
+
+cukup instruksikan secara high level. nanti dokumen planning akan digunakan oleh model yang lebih murah 

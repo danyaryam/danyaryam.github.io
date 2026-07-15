@@ -13,6 +13,21 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .certificate-preview {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            border: 1px solid rgba(246, 241, 232, 0.14);
+            border-radius: 18px;
+            margin-bottom: 18px;
+            background: rgba(255, 255, 255, 0.04);
+            object-fit: cover;
+        }
+
+        .certificate-preview[src=""] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -66,8 +81,8 @@
                 <p>Focus Area</p>
             </div>
             <div class="metric reveal">
-                <span>01</span>
-                <p>Production Project</p>
+                <span>02</span>
+                <p>Production & Capstone Projects</p>
             </div>
             <div class="metric reveal">
                 <span>2023</span>
@@ -90,11 +105,13 @@
                 <div class="role-grid">
                     <article>
                         <h3>Frontend Engineer</h3>
-                        <p>Menyusun UI dengan React.js, Next.js, Vue, TypeScript, Tailwind, Bootstrap, dan CSS yang responsif.</p>
+                        <p>Menyusun UI dengan React.js, Next.js, Vue, TypeScript, Tailwind, Bootstrap, dan CSS yang
+                            responsif.</p>
                     </article>
                     <article>
                         <h3>Full-stack Developer</h3>
-                        <p>Membangun aplikasi web dengan Laravel, PHP, Node.js, Prisma, MySQL, PostgreSQL, dan MongoDB.</p>
+                        <p>Membangun aplikasi web dengan Laravel, PHP, Node.js, Prisma, MySQL, PostgreSQL, dan MongoDB.
+                        </p>
                     </article>
                     <article>
                         <h3>AI Engineer</h3>
@@ -114,60 +131,36 @@
                 <article class="project-card reveal">
                     <div>
                         <span class="project-index">01</span>
-                        <h3>Dr. Aquatic</h3>
+                        <h3>PsyScreening</h3>
                         <p>
-                            Platform ecommerce aquatic yang dikembangkan saat magang. Saya bertanggung jawab pada
-                            front-end, back-end, database, perbaikan bug, integrasi API, dan deployment ke production.
+                            Sistem skrining awal kesehatan mental berbasis AI untuk prediksi multi-label menggunakan
+                            Machine Learning, Deep Learning, dan late fusion. Saya membangun pipeline dari
+                            preprocessing,
+                            feature engineering, training model, evaluasi, hingga dokumentasi eksperimen.
                         </p>
+                        <a href="https://psyscreening.vercel.app/" target="_blank" rel="noreferrer">Live Project</a>
                     </div>
                     <div class="project-meta">
-                        <span>Role: Full Stack Developer</span>
-                        <span>PHP, Laravel, SQL</span>
+                        <img class="project-preview" src="assets/images/Screenshot (271).png" alt="Preview project PsyScreening">
+                        <span>Role: AI / ML Engineer</span>
+                        <span>Python, TensorFlow, Keras</span>
                     </div>
                 </article>
 
                 <article class="project-card reveal">
                     <div>
                         <span class="project-index">02</span>
-                        <h3>Ecommerce Feature System</h3>
+                        <h3>Dr. Aquatic</h3>
                         <p>
-                            Implementasi fitur keranjang, login dan register, katalog produk, search produk, review
-                            produk, jasa kirim, pembayaran online, dan notifikasi pembayaran via email.
+                            Platform ecommerce aquatic yang dikembangkan saat magang. Saya bertanggung jawab pada
+                            front-end, back-end, database, perbaikan bug, integrasi API, dan deployment ke production.
                         </p>
+                        <a href="https://dr-aquatic.com/" target="_blank" rel="noreferrer">Live Project</a>
                     </div>
                     <div class="project-meta">
-                        <span>Role: Backend & Frontend</span>
-                        <span>RajaOngkir, Payment Gateway</span>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div>
-                        <span class="project-index">03</span>
-                        <h3>AI / Machine Learning Prototype</h3>
-                        <p>
-                            Eksplorasi machine learning dan deep learning untuk pemrosesan data, training model,
-                            evaluasi performa, serta penerapan insight AI dalam solusi aplikasi.
-                        </p>
-                    </div>
-                    <div class="project-meta">
-                        <span>Role: AI Engineer</span>
-                        <span>Python, TensorFlow, scikit-learn</span>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div>
-                        <span class="project-index">04</span>
-                        <h3>Personal Portfolio Website</h3>
-                        <p>
-                            Website portofolio personal untuk menampilkan profil, skill, pengalaman, project,
-                            sertifikasi, dan kontak dalam pengalaman satu halaman yang ringan dan responsif.
-                        </p>
-                    </div>
-                    <div class="project-meta">
-                        <span>Role: Frontend Engineer</span>
-                        <span>HTML, CSS, JavaScript</span>
+                        <img class="project-preview" src="assets/images/Screenshot 2026-07-15 152941.png" alt="Preview project Dr. Aquatic">
+                        <span>Role: Full Stack Developer</span>
+                        <span>PHP, Laravel, SQL</span>
                     </div>
                 </article>
             </div>
@@ -222,6 +215,15 @@
                         <span>Deep Learning</span>
                         <span>Neural Networks</span>
                         <span>Long Short-term Memory</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Google Colab</span>
+                        <span>Jupyter Notebook</span>
+                        <span>Artificial Neural Network</span>
+                        <span>Deep Neural Network</span>
+                        <span>Late Fusion</span>
                         <span>Figma</span>
                         <span>UI Design</span>
                         <span>Product Thinking</span>
@@ -237,6 +239,8 @@
             </div>
             <div class="certificate-grid">
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src=""
+                        alt="Preview sertifikat Membangun Proyek Deep Learning Tingkat Mahir">
                     <span>Dicoding | Jun 2026 - Jun 2029</span>
                     <h3>Membangun Proyek Deep Learning Tingkat Mahir</h3>
                     <strong>Credential ID MEPJOG6ZLZ3V</strong>
@@ -246,6 +250,7 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src="" alt="Preview sertifikat Belajar Fundamental Deep Learning">
                     <span>Dicoding | May 2026 - May 2029</span>
                     <h3>Belajar Fundamental Deep Learning</h3>
                     <strong>Credential ID 98XW085O4XM3</strong>
@@ -255,6 +260,8 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src=""
+                        alt="Preview sertifikat Belajar Machine Learning untuk Pemula">
                     <span>Dicoding | Mar 2026 - Mar 2029</span>
                     <h3>Belajar Machine Learning untuk Pemula</h3>
                     <strong>Credential ID MEPJOM9Q4Z3V</strong>
@@ -264,6 +271,7 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src="" alt="Preview sertifikat Memulai Pemrograman dengan Python">
                     <span>Dicoding | Feb 2026 - Feb 2029</span>
                     <h3>Memulai Pemrograman dengan Python</h3>
                     <strong>Credential ID N9ZONOY9DXG5</strong>
@@ -273,6 +281,7 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src="" alt="Preview sertifikat Belajar Dasar AI">
                     <span>Dicoding | Feb 2026 - Feb 2029</span>
                     <h3>Belajar Dasar AI</h3>
                     <strong>Credential ID 53XE1MQQRZRN</strong>
@@ -282,6 +291,7 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src="" alt="Preview sertifikat Belajar Dasar Git dengan GitHub">
                     <span>Dicoding | Feb 2026 - Feb 2029</span>
                     <h3>Belajar Dasar Git dengan GitHub</h3>
                     <strong>Credential ID 98XW08554XM3</strong>
@@ -291,6 +301,8 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src=""
+                        alt="Preview sertifikat Memulai Dasar Pemrograman untuk Menjadi Pengembang Software">
                     <span>Dicoding | Feb 2026 - Feb 2029</span>
                     <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
                     <strong>Credential ID 2VX30WKEJXYQ</strong>
@@ -300,6 +312,7 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src="" alt="Preview sertifikat Responsive Web Design">
                     <span>freeCodeCamp | Jan 2024 - Sekarang</span>
                     <h3>Responsive Web Design</h3>
                     <p>
@@ -308,6 +321,7 @@
                     </p>
                 </article>
                 <article class="certificate-card reveal">
+                    <img class="certificate-preview" src="" alt="Preview sertifikat Pengenalan ke Logika Pemrograman">
                     <span>Dicoding | Feb 2026 - Feb 2029</span>
                     <h3>Pengenalan ke Logika Pemrograman</h3>
                     <strong>Credential ID 53XE1LD9KZRN</strong>
@@ -326,24 +340,22 @@
             </div>
             <div class="timeline reveal">
                 <article>
-                    <span>Feb 2025 - Nov 2025</span>
-                    <h3>Dr. Aquatic</h3>
-                    <p>Full Stack Developer untuk ecommerce aquatic, termasuk weekly presentation, daily stand up, API, database, payment, shipping, dan server production.</p>
-                </article>
-                <article>
                     <span>2023 - Sekarang</span>
                     <h3>Politeknik Negeri Banyuwangi</h3>
-                    <p>Teknologi Rekayasa Perangkat Lunak dengan fokus web development, database, software engineering, dan AI engineering.</p>
+                    <p>Teknologi Rekayasa Perangkat Lunak dengan fokus web development, database, software engineering,
+                        dan AI engineering.</p>
                 </article>
                 <article>
                     <span>2020 - 2023</span>
                     <h3>SMAN 1 GIRI</h3>
-                    <p>Aktif di OSIS, basket, dan band. Meraih juara 3 basket SMA putra pada HARJABA 2021 dan Banteng Cup 2023.</p>
+                    <p>Aktif di OSIS, basket, dan band. Meraih juara 3 basket SMA putra pada HARJABA 2021 dan Banteng
+                        Cup 2023.</p>
                 </article>
                 <article>
                     <span>Sep 2021 - Sep 2022</span>
                     <h3>OSIS & Batalyon Smagi</h3>
-                    <p>Koordinator Departemen Sosial Politik, ketua panitia Sumpah Pemuda, dan ketua panitia Smagi Basketball Championship.</p>
+                    <p>Koordinator Departemen Sosial Politik, ketua panitia Sumpah Pemuda, dan ketua panitia Smagi
+                        Basketball Championship.</p>
                 </article>
             </div>
         </section>
